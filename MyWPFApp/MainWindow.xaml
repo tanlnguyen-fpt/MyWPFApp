@@ -5,8 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyWPFApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,165,0,0" TextWrapping="Wrap" Text="Welcome to WPF" VerticalAlignment="Top" RenderTransformOrigin="0.436,2.417" Height="79" Width="400" FontSize="48"/>
-    </Grid>
+        Title="MainWindow"
+        Height="258"
+        Width="296">
+    <Grid>        <Button Margin="10">            <Grid>                <Polygon Points="100,25 125,0 200,25 125,50"
+                         Fill="LightSteelBlue" />                <Polygon Points="100,25 75,0 0,25 75,50"
+                         Fill="White" />            </Grid>        </Button>    </Grid>
 </Window>
