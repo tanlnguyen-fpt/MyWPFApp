@@ -5,8 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyWPFApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        Height="275"
+        Width="329">
     <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,165,0,0" TextWrapping="Wrap" Text="Welcome to WPF" VerticalAlignment="Top" RenderTransformOrigin="0.436,2.417" Height="79" Width="400" FontSize="48"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+        </Grid.RowDefinitions>
+        <ListBox Name="lst">
+            <CheckBox Margin="3">Option 1</CheckBox>
+            <CheckBox Margin="3">Option 2</CheckBox>
+            <CheckBox Margin="3">Option 3</CheckBox>
+        </ListBox>
+        <StackPanel Grid.Row="1"
+                    Margin="0,10,0,0">
+            <TextBlock>Current selection:</TextBlock>
+            <TextBlock Name="txtSelection"
+                       TextWrapping="Wrap"></TextBlock>
+            <Button Margin="0,10,0,0"
+                    Click="Button_Click">Examine All Items</Button>
+        </StackPanel>
     </Grid>
 </Window>
