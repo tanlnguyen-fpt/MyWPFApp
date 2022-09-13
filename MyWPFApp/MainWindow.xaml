@@ -5,8 +5,25 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyWPFApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        Height="186"
+        Width="283">
     <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,165,0,0" TextWrapping="Wrap" Text="Welcome to WPF" VerticalAlignment="Top" RenderTransformOrigin="0.436,2.417" Height="79" Width="400" FontSize="48"/>
+        <StackPanel>
+            <GroupBox Margin="5">
+                <StackPanel>
+                    <RadioButton>Group 1</RadioButton>
+                    <RadioButton>Group 1</RadioButton>
+                    <RadioButton>Group 1</RadioButton>
+                </StackPanel>
+            </GroupBox>
+            <GroupBox Margin="5">
+                <StackPanel>
+                    <RadioButton>Group 2</RadioButton>
+                    <RadioButton>Group 2</RadioButton>
+                    <RadioButton>Group 2</RadioButton>
+                </StackPanel>
+            </GroupBox>
+        </StackPanel>
     </Grid>
 </Window>
