@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyWPFApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        Height="151"
+        Width="287"
+        Loaded="Window_Loaded">
     <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,165,0,0" TextWrapping="Wrap" Text="Welcome to WPF" VerticalAlignment="Top" RenderTransformOrigin="0.436,2.417" Height="79" Width="400" FontSize="48"/>
+        <DataGrid Name="dgCarList"
+                  AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn Width="*"
+                                    Header="Car name"
+                                    Binding="{Binding CarName}" />
+                <DataGridTextColumn Width="*"
+                                    Header="Color"
+                                    Binding="{Binding Color}" />
+                <DataGridTextColumn Width="*"
+                                    Header="Brand"
+                                    Binding="{Binding Brand}" />
+            </DataGrid.Columns>
+        </DataGrid>
     </Grid>
 </Window>

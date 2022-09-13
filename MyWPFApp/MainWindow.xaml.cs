@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace MyWPFApp
 {
@@ -23,6 +11,19 @@ namespace MyWPFApp
         public MainWindow()
         {
             InitializeComponent();
+            Loaded += Window_Loaded;
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            List<dynamic> cars = new List<dynamic>
+            {
+                new {CarName="A6",Color="White",Brand="Audi"},
+                new {CarName="A7",Color="White1",Brand="Audi1"},
+                new {CarName="A8",Color="White2",Brand="Audi2"},
+            };
+
+            dgCarList.ItemsSource = cars;
         }
     }
 }
