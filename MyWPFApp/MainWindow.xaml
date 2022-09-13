@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyWPFApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        Height="149"
+        Width="390">
     <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,165,0,0" TextWrapping="Wrap" Text="Welcome to WPF" VerticalAlignment="Top" RenderTransformOrigin="0.436,2.417" Height="79" Width="400" FontSize="48"/>
+        <StackPanel HorizontalAlignment="Left"
+                    Width="350">
+            <ComboBox Margin="5"
+                      Name="cbBoxColor"
+                      SelectionChanged="cbBoxColor_SelectionChanged">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Fill="Green"
+                               Width="30"></Rectangle>
+                    <Label VerticalAlignment="Center">Green</Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Fill="Red"
+                               Width="30"></Rectangle>
+                    <Label VerticalAlignment="Center">Red</Label>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Fill="Yellow"
+                               Width="30"></Rectangle>
+                    <Label VerticalAlignment="Center">Yellow</Label>
+                </StackPanel>
+            </ComboBox>
+            <Label Name="lbMsg"></Label>
+        </StackPanel>
     </Grid>
 </Window>
