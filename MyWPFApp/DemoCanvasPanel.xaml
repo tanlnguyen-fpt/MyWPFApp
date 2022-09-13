@@ -1,12 +1,0 @@
-﻿<Window x:Class="MyWPFApp.DemoCanvasPanel"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:MyWPFApp"
-        mc:Ignorable="d"
-        Title="Canvas Panel" Height="300" Width="400" WindowStartupLocation="CenterScreen" >
-    <Grid>
-        <Canvas Background="LightBlue">            <Button x:Name="btnDisplay" Canvas.Left="141" Height="28" Canvas.Top="204"                    Width="80" Content="Display" Click="btnDisplay_Click" HorizontalAlignment="Left" VerticalAlignment="Top" />            <Label x:Name="lblInstructions" Canvas.Left="17" Canvas.Top="14"                    Width="328" Height="27" FontSize="15" Content="Enter Car Information"/>            <Label x:Name="lblCarName" Canvas.Left="21" Canvas.Top="61" Content="Car Name" HorizontalAlignment="Center" VerticalAlignment="Top"/>            <TextBox x:Name="txtCarName" Canvas.Left="101" Canvas.Top="61" Width="193" Height="25" HorizontalAlignment="Center" VerticalAlignment="Top"/>            <Label x:Name="lblColor" Canvas.Left="21" Canvas.Top="110" Content="Color" HorizontalAlignment="Center" VerticalAlignment="Top"/>            <TextBox x:Name="txtColor" Canvas.Left="101" Canvas.Top="108" Width="193" Height="25" HorizontalAlignment="Center" VerticalAlignment="Top"/>            <Label x:Name="lblBrand" Canvas.Left="21" Canvas.Top="156" Content="Brand" HorizontalAlignment="Center" VerticalAlignment="Top"/>            <TextBox x:Name="txtBrand" Canvas.Left="101" Canvas.Top="154" Width="193" Height="25" HorizontalAlignment="Center" VerticalAlignment="Top"/>        </Canvas>
-    </Grid>
-</Window>
