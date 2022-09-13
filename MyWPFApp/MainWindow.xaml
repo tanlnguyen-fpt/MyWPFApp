@@ -5,8 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:MyWPFApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow"
+        Height="239"
+        Width="378">
     <Grid>
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Center" Margin="0,165,0,0" TextWrapping="Wrap" Text="Welcome to WPF" VerticalAlignment="Top" RenderTransformOrigin="0.436,2.417" Height="79" Width="400" FontSize="48"/>
+        <Grid>            <StackPanel>                <TextBlock Name="textBlock1"
+                           TextWrapping="Wrap">                    <Bold>TextBlock</Bold> is designed to be <Italic>lightweight</Italic>, and is geared specifically at integrating <Italic>small</Italic> portions of flow content into a UI.                </TextBlock>                <Button Width="100"
+                        Margin="10">Click Me</Button>                <TextBlock  Name="textBlock2"
+                            TextWrapping="Wrap"
+                            Background="AntiqueWhite"
+                            TextAlignment="Center">By default, a TextBlock provides no UI beyond simply displaying its contents.                </TextBlock>                <Button Width="100"
+                        Margin="10">Click Me</Button>            </StackPanel>        </Grid>
     </Grid>
 </Window>
